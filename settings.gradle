@@ -1,0 +1,2 @@
+rootProject.name = "Pw0 Framewrok"
+include ':app'
