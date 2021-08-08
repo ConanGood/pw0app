@@ -1,0 +1,27 @@
+#!/system/bin/sh
+
+### IMPORT ENVIRONMENT ###
+FROM_HUNTMIX_TO_WORLD=$(readlink -f $0)
+. ${FROM_HUNTMIX_TO_WORLD%/*}/bootroot
+
+## Validate Chroot path.
+if [ -z "$MNT" ]; then
+    echo "[-] Error [-3]"
+    exit 2
+fi
+
+if [ ! -d "$MNT" ]; then
+    echo "[-] \"$MNT\" directory does`nt exist."
+    echo "[!] Install chroot please."
+    exit 2
+fi
+
+## Define chroot sudo executable path.
+if [ ! -x $MNT$CHROOT_EXEC ]; then
+    echo "[-] Your chroot has no \"sudo\" installed, please install it manually first."
+    echo "[-] Also make sure your Chroot is not corrupted."
+    exit 2
+fi
+
+clear
+$BUSYBOX chroot $MNT $CHROOT_EXEC -E PATH=$PATH login su
