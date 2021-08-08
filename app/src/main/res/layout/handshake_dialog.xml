@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/dialog_rectangle"
+
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:layout_marginTop="5dp"
+        android:id="@+id/hs_status"
+        android:textColor="@color/text"
+        android:text="Preparing..."
+        android:textSize="20dp" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/gifka"
+        android:background="@drawable/catwait"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginRight="5dp"
+    android:src="@drawable/timer"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/time"
+            android:textColor="@color/text"
+            android:layout_gravity="center"
+            android:text="Elapsed time: "
+            android:textSize="15dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/wifi"
+            app:tint="#283593" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ap"
+            android:layout_gravity="center"
+            android:textColor="@color/text"
+            android:text="AP: "
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="300px"
+        android:textColor="#DAFFFFFF"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:scrollbars = "vertical"
+        android:paddingTop="3dp"
+        android:textSize="12dp"
+        android:background="@drawable/rectangle_cmd"
+    android:id="@+id/hsoutput"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect usb (deauth)"
+        android:id="@+id/deauth"
+        android:textColor="@color/button"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/button"
+        android:id="@+id/hs_cancel"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>

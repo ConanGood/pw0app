@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/dialog_rectangle"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/email"
+        app:tint="@color/img" />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tophs"
+        android:textColor="@color/text"
+        android:layout_marginTop="10dp"
+        android:text="Please enter a valid email"
+        android:textSize="20dp" />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/text"
+        android:layout_marginTop="2dp"
+        android:id="@+id/emailstatus"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="You will recive a notification when password will be recovered"
+        android:textSize="15dp" />
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/email"
+    android:textColor="@color/text"
+    android:gravity="center"
+    android:hint="youremail@mail.com"
+    android:layout_gravity="center"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@color/button"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/send"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cancelhs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text=" Cancel "
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+</LinearLayout>

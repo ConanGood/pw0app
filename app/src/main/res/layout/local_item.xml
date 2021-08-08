@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/localitem"
+    android:clickable="true"
+
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:id="@+id/imglocal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/devices"
+                app:tint="@color/img" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="center"
+
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:layout_marginLeft="4dp"
+        android:text="IP of device"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:text="Company"
+        android:textSize="12dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/porter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text"
+            android:text="Ports:"
+            android:visibility="invisible"
+            android:textSize="12dp"
+            />
+        <TextView
+            android:id="@+id/porter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text"
+            android:text=""
+            android:visibility="invisible"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/port"
+            android:text="Scan"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:id="@+id/ports"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:trackCornerRadius="5dp"
+        app:showAnimationBehavior="inward"
+        android:id="@+id/portprogress"
+        app:trackColor="@android:color/transparent"
+        app:indicatorColor="#311B92"
+        />
+</LinearLayout>

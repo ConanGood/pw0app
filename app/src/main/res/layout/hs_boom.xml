@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hslist"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/hscat"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="invisible"
+        android:background="@drawable/catwait"
+        app:layout_constraintBottom_toBottomOf="@+id/hslist"
+        app:layout_constraintEnd_toEndOf="@+id/hslist"
+        app:layout_constraintStart_toStartOf="@+id/hslist"
+        app:layout_constraintTop_toTopOf="@+id/hslist" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text"
+        android:visibility="invisible"
+        android:id="@+id/hserror"
+        android:layout_marginTop="10dp"
+        android:text="Ooops.. no handshakes here.."
+        app:layout_constraintTop_toBottomOf="@+id/hscat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

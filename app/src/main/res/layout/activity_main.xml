@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:theme="@style/Theme.Pw0Framewrok.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_bar"
+            android:background="#3949AB"
+            android:elevation="4dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:id="@+id/monmode"
+                android:textSize="12sp"
+                android:onClick="monitore"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:focusable="true"
+                android:src="@drawable/startmon"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                app:tint="@color/white" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:id="@+id/checkusb"
+                android:textSize="12sp"
+                android:onClick="checkusb"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:focusable="true"
+                android:src="@drawable/usb"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                app:tint="#D3D3D3" />
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            app:tabTextColor="@color/white"
+            app:tabIconTint="@color/white"
+            app:tabIndicatorColor="@color/button"
+            android:layout_width="match_parent"
+            app:tabRippleColor="@color/white"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="8dp"
+    android:id="@+id/source"
+    android:autoLink="all"
+    android:textColor="@color/text"
+    android:text=" Beta 0.2\n Source: t.me/kali_nh \n Author: t.me/pw0dev"
+    android:layout_gravity="bottom"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

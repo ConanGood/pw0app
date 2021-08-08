@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="150dp"
+    android:layout_height="8dp"
+    android:background="@drawable/rectangle"
+    android:layout_gravity="center"
+    android:layout_marginTop="8dp"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hs"
+        app:tint="@color/img" />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AP name"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:textColor="@color/text"
+        android:layout_gravity="center"
+        android:id="@+id/hsap"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Absolute path"
+        android:textSize="12dp"
+        android:textColor="@color/text"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/hspath"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/upload"
+        android:drawableTint="@color/white"
+        android:text="upload to onlinehashcrack.com"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/button"
+        android:backgroundTint="@color/purple_200"
+        android:id="@+id/upload"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/key"
+        android:drawableTint="@color/white"
+        android:text="Try to crack offline"
+        android:enabled="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/crackhs"/>
+</LinearLayout>

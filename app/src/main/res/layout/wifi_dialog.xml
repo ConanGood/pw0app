@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="150dp"
+    android:layout_height="8dp"
+    android:background="@drawable/rectangle"
+    android:layout_gravity="center"
+    android:layout_marginTop="8dp"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/wifi"
+        app:tint="@color/img" />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wifi name"
+        android:textColor="@color/text"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/wifi_name"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAC adress"
+        android:textSize="20dp"
+        android:textColor="@color/text"
+        android:layout_gravity="center"
+        android:id="@+id/wifi_mac"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pixie Dust"
+            android:id="@+id/pixie"
+            android:gravity="center"
+            android:textColor="@color/text"
+
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/hs"
+            android:text="Handshake"
+            android:textColor="@color/text"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/deather"
+            android:text="Deauth"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

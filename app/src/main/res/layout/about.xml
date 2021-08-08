@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Donation"
+        android:textColor="@color/text"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Donates help the development \n of the project"
+        android:textColor="@color/text"
+        android:textSize="18dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/visacard"
+            android:autoLink="all"
+            android:textColorLink="#2263A8"
+            android:textColor="#20AEC1"
+            android:text="https://www.donationalerts.com/r/huntmixapps"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Developers"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/text"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="People who works on this project"
+        android:textColor="@color/text"
+        android:textSize="18dp" />
+      <TextView
+        android:id="@+id/creds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Main developer: @Huntmix (aka @Pw0dev) \nSpecial thanks for: @Mirivan\n\n\n\nThx for alpha-testers:\n @zha_zha_zha_zha\n@maaden't\n@zharkeev\n@Тов.Майор"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Pw0 Framework Beta 0.2\nAll rights reserved by Huntmix Apps"
+        android:textColor="@color/text" />
+</LinearLayout>
