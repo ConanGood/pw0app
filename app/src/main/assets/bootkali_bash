@@ -1,0 +1,31 @@
+#!/system/bin/sh
+
+######### IMPORT BOOTKALI ENVIRONMENT #########
+BUSYBOX=/data/data/com.huntmix.pw0boom/cache/busybox
+MNT=/data/local/pw0/test/
+CHROOT_EXEC=/usr/bin/sudo
+## Validate busybox path.
+if [ -z "$BUSYBOX" ]; then
+    bklog "[-] No busybox_nh is installed or busybox is not granted execute permission, if you did have it installed, please symlink it to /system/bin and grant it the permission."
+    exit 1
+fi
+
+## Validate kali Chroot path.
+if [ -z "$MNT" ]; then
+
+    exit 2
+fi
+
+if [ ! -d "$MNT" ]; then
+
+    exit 2
+fi
+
+## Define chroot shell executable path.
+if [ ! -x $MNT$CHROOT_EXEC ]; then
+
+    exit 2
+fi
+
+clear
+$BUSYBOX chroot $MNT $CHROOT_EXEC -E PATH=$PATH su
